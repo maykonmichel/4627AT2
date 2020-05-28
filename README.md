@@ -1,3 +1,15 @@
+# 2º trabalho - Programação não linear: multivariável irrestrito
+
+## Alunos
+
+- Beatriz Tavares - 181022011
+- Jamilly Souza - 181020416
+- Maykon Michel - 181022656
+
+Acesso em: https://unrestricted-multivariable-4627at2.herokuapp.com/
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
