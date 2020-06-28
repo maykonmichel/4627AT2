@@ -14,6 +14,7 @@ const Home = () => {
           <p>Beatriz Tavares - 181022011</p>
           <p>Jamilly Souza - 181020416</p>
           <p>Maykon Michel - 181022656</p>
+          <p>Rafael Kawagoe - 171025725</p>
           <Divider />
           <p>
             Código fonte em:
