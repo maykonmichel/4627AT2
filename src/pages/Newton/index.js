@@ -9,11 +9,9 @@ import methods from '../../methods';
 import useStyles from './useStyles';
 
 const initialValues = {
-  f: '',
-  a: 0,
-  b: 0,
-  d: 0,
-  e: 0,
+  f: '4*x1^2 + 2*x1*x2 + 2*x2^2 + x1 + x2',
+  x0: '(0 0)',
+  e: 0.01,
 };
 
 const initialResponse = {
@@ -24,8 +22,7 @@ const initialResponse = {
 
 const validationSchema = yup.object().shape({
   f: yup.string().label('Função').required(),
-  a: yup.number().label('a').required(),
-  b: yup.number().label('b').required(),
+  x0: yup.string().label('x0').required(),
   e: yup.number().label('ε').required().moreThan(0),
 });
 
@@ -88,26 +85,13 @@ const Newton = () => {
                   autoFocus
                 />
               </Grid>
-              <Grid item xs={3}>
+              <Grid item xs={9}>
                 <TextField
-                  type="number"
-                  error={!!errors.a}
-                  helperText={errors.a}
-                  name="a"
-                  label="a"
-                  value={values.a}
-                  onChange={handleChange}
-                  fullWidth
-                />
-              </Grid>
-              <Grid item xs={3}>
-                <TextField
-                  type="number"
-                  error={!!errors.b}
-                  helperText={errors.b}
-                  name="b"
-                  label="b"
-                  value={values.b}
+                  error={!!errors.x0}
+                  helperText={errors.x0}
+                  name="x0"
+                  label="x0"
+                  value={values.x0}
                   onChange={handleChange}
                   fullWidth
                 />
