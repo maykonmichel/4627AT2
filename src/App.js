@@ -5,6 +5,7 @@ import Header from './components/Header';
 import CyclicalCoordinates from './pages/CyclicalCoordinates';
 import Home from './pages/Home';
 import Newton from './pages/Newton';
+import FletcherReeves from './pages/FletcherReeves'
 
 export default () => (
   <BrowserRouter>
@@ -18,6 +19,9 @@ export default () => (
       </Route>
       <Route path="/coordenadas-ciclicas" exact>
         <CyclicalCoordinates />
+      </Route>
+      <Route path="/fletcher-reeves" exact>
+        <FletcherReeves />
       </Route>
     </Switch>
   </BrowserRouter>
