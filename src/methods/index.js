@@ -1,10 +1,12 @@
 import { abs, derivative, max } from 'mathjs';
 
 import cyclicalCoordinates from './cyclicalCoordinates';
+import hookeAndJeeves from './hookeAndJeeves';
 import newton from './newton';
 
 const methods = {
   cyclicalCoordinates,
+  hookeAndJeeves,
   newton,
 };
 
