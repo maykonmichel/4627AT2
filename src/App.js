@@ -1,11 +1,11 @@
-import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import Header from './components/Header';
-import CyclicalCoordinates from './pages/CyclicalCoordinates';
-import Home from './pages/Home';
-import HookeAndJeeves from './pages/HookeAndJeeves';
-import Newton from './pages/Newton';
+import Header from "./components/Header";
+import CyclicalCoordinates from "./pages/CyclicalCoordinates";
+import Home from "./pages/Home";
+import HookeAndJeeves from "./pages/HookeAndJeeves";
+import Newton from "./pages/Newton";
 
 export default () => (
   <BrowserRouter>

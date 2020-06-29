@@ -1,15 +1,17 @@
 module.exports = {
   root: true,
-  extends: ['airbnb', 'prettier'],
+  extends: ["airbnb", "prettier"],
+  plugins: ['prettier'],
   rules: {
-    'react/jsx-filename-extension': 'off',
-    'react/jsx-props-no-spreading': 'off',
-    'react/prop-types': [
-      'error',
+    'prettier/prettier': 'error',
+    "react/jsx-filename-extension": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/prop-types": [
+      "error",
       {
-        ignore: ['children'],
+        ignore: ["children"],
       },
     ],
-    'no-console': 'error',
+    "no-console": "error",
   },
 };

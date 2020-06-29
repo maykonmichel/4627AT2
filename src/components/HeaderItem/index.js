@@ -1,10 +1,10 @@
-import React, { memo, useCallback } from 'react';
-import { Button } from '@material-ui/core';
-import { useHistory, useLocation } from 'react-router-dom';
-import clsx from 'clsx';
-import PropTypes from 'prop-types';
+import React, { memo, useCallback } from "react";
+import { Button } from "@material-ui/core";
+import { useHistory, useLocation } from "react-router-dom";
+import clsx from "clsx";
+import PropTypes from "prop-types";
 
-import useStyles from './useStyles';
+import useStyles from "./useStyles";
 
 const HeaderItem = memo(({ path, title }) => {
   const classes = useStyles();
@@ -29,8 +29,8 @@ HeaderItem.propTypes = {
 };
 
 HeaderItem.defaultProps = {
-  path: 'path',
-  title: '',
+  path: "path",
+  title: "",
 };
 
 export default HeaderItem;
