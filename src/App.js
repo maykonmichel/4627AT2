@@ -5,6 +5,8 @@ import Header from './components/Header';
 import CyclicalCoordinates from './pages/CyclicalCoordinates';
 import Home from './pages/Home';
 import Newton from './pages/Newton';
+import Gradient from './pages/Gradient';
+import ConjugateGradient from './pages/ConjugateGradient';
 
 export default () => (
   <BrowserRouter>
@@ -18,6 +20,12 @@ export default () => (
       </Route>
       <Route path="/coordenadas-ciclicas" exact>
         <CyclicalCoordinates />
+      </Route>
+      <Route path="/gradiente" exact>
+        <Gradient />
+      </Route>
+      <Route path="/gradiente-conjugado-generalizado" exact>
+        <ConjugateGradient />
       </Route>
     </Switch>
   </BrowserRouter>

@@ -2,10 +2,14 @@ import { abs, derivative, max } from 'mathjs';
 
 import cyclicalCoordinates from './cyclicalCoordinates';
 import newton from './newton';
+import gradient from './gradient';
+import conjugateGradient from './conjugateGradient';
 
 const methods = {
   cyclicalCoordinates,
   newton,
+  gradient,
+  conjugateGradient
 };
 
 const minimize = (f) => {
