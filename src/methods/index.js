@@ -4,12 +4,16 @@ import cyclicalCoordinates from "./cyclicalCoordinates";
 import hookeAndJeeves from "./hookeAndJeeves";
 import newton from "./newton";
 import fletcherReeves from "./fletcherReeves";
+import gradient from "./gradient";
+import conjugateGradient from "./conjugateGradient";
 
 const methods = {
   cyclicalCoordinates,
   hookeAndJeeves,
   newton,
   fletcherReeves,
+  gradient,
+  conjugateGradient,
 };
 
 const minimize = (f, e) => {
